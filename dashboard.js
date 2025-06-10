@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const expenseForm = document.getElementById('expenseForm');
   const expensesTableBody = document.querySelector('#expensesTable tbody');
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let pieChart;
 
   async function loadExpenses() {
-    const res = await fetch('http://localhost:3001/api/expenses');
+    const res = await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/api/expenses');
     const data = await res.json();
     renderExpenses(data);
     renderChart(data);
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const date = document.getElementById('date').value;
     const notes = document.getElementById('notes').value;
 
-    await fetch('http://localhost:3001/api/expenses', {
+    await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/api/expenses', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount, category, date, notes })
