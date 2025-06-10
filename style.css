@@ -1,0 +1,87 @@
+/* Reset default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #4c6ef5, #9c36b5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #ffd43b;
+  color: #4c6ef5;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffe066;
+}
+
+a {
+  color: #ffd43b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
