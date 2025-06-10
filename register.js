@@ -7,7 +7,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
   const message = document.getElementById('registerMessage');
 
   try {
-    const response = await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/register', {
+    const response = await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
