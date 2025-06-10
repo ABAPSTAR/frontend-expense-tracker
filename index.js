@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
   const message = document.getElementById('message');
 
   try {
-    const response = await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/login', {
+    const response = await fetch('https://expense-tracker-backend-1-ejz2.onrender.com/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
